@@ -12,6 +12,7 @@ class CakeAPI
   def to_query(params, *parent)
       query = ''
       stack = ''
+      parent = ''
 
       params.each do |k, v|
         if v.class == Hash
